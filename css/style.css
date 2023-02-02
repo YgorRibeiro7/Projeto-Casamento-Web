@@ -1,0 +1,180 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{  /* esse codigo faz  com  que ao  clicar  no botao tipo angora, desse e navega suavemente*/
+    scroll-behavior: smooth;
+}
+
+body {
+    /*font-family: 'Nunito', sans-serif;*/
+    font-family: 'Asap', sans-serif;
+    /*font-family: 'Yellowtail', serif;*/
+}
+
+#topo {
+    display: flex;
+    flex-direction: column; /* ou column */
+    justify-content: center;
+    align-items: center;
+    
+
+    width: 100%;
+    /*height: 100px;*/
+    height: 10vh;
+
+    background-color: rgb(30, 30, 46);
+}
+
+/* sessão do banner */
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../img/banner/camera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+
+    /*height: 600px;*/
+    height: 60vh;
+}
+
+/* sessão fotos */
+    #fotos {
+        display: flex;
+        flex-direction: row;  
+
+        flex-wrap: wrap; 
+        /* com esta configuração >> */
+
+    }
+
+    #fotos h2 {
+        width: 100%;
+        text-align: center;
+
+        margin: 15px 0;
+    }
+
+    #fotos img {
+        width: 33.333333%;
+        /* >> e está configuração: 
+            as fotos ficaram lado a lado! */
+    }
+
+    /* rodape do site */
+    footer {
+        width: 100%;
+    /*height: 100px;*/
+    height: 7vh;
+
+    background-color: rgb(13, 13, 14);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px 0;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+
+        margin-bottom: 5px;
+
+        font-size: 20px;
+    }
+
+    footer p {
+        color: white;
+        
+        cursor: default;
+    }
+
+    /* inicio das media query */
+/* quando o site for carregar para uma tela maior que 768px,
+    serão acionadas as informações abaixo para a adequação. */
+@media screen and (max-width: 768px) {
+    
+    /* banner do site */
+    /*#banner {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    } */
+    
+    #fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        /*padding-top: 20px; */
+    }
+    
+    /*#fotos h2 {
+        margin-bottom: 20px;
+    }*/
+    
+    #fotos img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 780px) {
+   
+    .primeiro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+}
+h4{
+    color: rgb(8, 8, 8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.video{
+  position: relative;/*" ele será relativo aquilo  que estiver próximo ,ele irá perceber os que está proximo  e terá um dicionamento aquilo que está proximo*/
+  padding-bottom: 50%;
+  background-color: rgb(238, 245, 243);
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.034);
+
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px  #ffffff;
+}
